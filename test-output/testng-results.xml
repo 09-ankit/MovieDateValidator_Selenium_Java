@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Vagrant Selenium Java Assignment" duration-ms="30745" started-at="2022-11-12T10:34:39Z" finished-at="2022-11-12T10:35:10Z">
+    <groups>
+    </groups>
+    <test name="Test Validate Movie Info are Same in Both IMDB and Wikipedia" duration-ms="30745" started-at="2022-11-12T10:34:39Z" finished-at="2022-11-12T10:35:10Z">
+      <class name="movieInfoAutomationTestCases.MovieDetailsCompareTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="setup" is-config="true" duration-ms="3921" started-at="2022-11-12T16:04:39Z" finished-at="2022-11-12T16:04:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="wikiGetMovieDetailsTest(java.lang.String, java.lang.String)[pri:1, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="wikiGetMovieDetailsTest" duration-ms="5458" started-at="2022-11-12T16:04:43Z" description="Get Movie details from Wikipedia Page" finished-at="2022-11-12T16:04:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://en.wikipedia.org/wiki/Main_Page]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pushpa: The Rise - Part 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wikiGetMovieDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="147" started-at="2022-11-12T16:04:48Z" finished-at="2022-11-12T16:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="setup" is-config="true" duration-ms="2477" started-at="2022-11-12T16:04:49Z" finished-at="2022-11-12T16:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="imdbGetMovieDetailsTest(java.lang.String, java.lang.String)[pri:2, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="imdbGetMovieDetailsTest" duration-ms="15391" started-at="2022-11-12T16:04:51Z" description="Get Movie details from IMDB Page" finished-at="2022-11-12T16:05:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.imdb.com/search/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pushpa: The Rise - Part 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imdbGetMovieDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="179" started-at="2022-11-12T16:05:06Z" finished-at="2022-11-12T16:05:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="setup" is-config="true" duration-ms="2895" started-at="2022-11-12T16:05:07Z" finished-at="2022-11-12T16:05:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyMovieDetailsTest()[pri:3, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="verifyMovieDetailsTest" duration-ms="0" started-at="2022-11-12T16:05:09Z" description="Verify Movie Details found from Wikipedia and Imdb page are Same " finished-at="2022-11-12T16:05:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMovieDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="220" started-at="2022-11-12T16:05:09Z" finished-at="2022-11-12T16:05:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- movieInfoAutomationTestCases.MovieDetailsCompareTest -->
+    </test> <!-- Test Validate Movie Info are Same in Both IMDB and Wikipedia -->
+  </suite> <!-- Test Vagrant Selenium Java Assignment -->
+</testng-results>

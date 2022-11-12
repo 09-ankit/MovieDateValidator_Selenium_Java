@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Vagrant Selenium Java]">
+  <test name="Test Validate Movie Info are Same in Both IMDB and Wikipedia(failed)">
+    <parameter name="MovieName" value="Pushpa: The Rise - Part 1"/>
+    <parameter name="ImdbUrl" value="https://www.imdb.com/search/"/>
+    <parameter name="wikipediaURl" value="https://en.wikipedia.org/wiki/Main_Page"/>
+    <classes>
+      <class name="movieInfoAutomationTestCases.MovieDetailsCompareTest">
+        <methods>
+          <include name="imdbGetMovieDetailsTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="verifyMovieDetailsTest"/>
+          <include name="wikiGetMovieDetailsTest" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- movieInfoAutomationTestCases.MovieDetailsCompareTest -->
+    </classes>
+  </test> <!-- Test Validate Movie Info are Same in Both IMDB and Wikipedia(failed) -->
+</suite> <!-- Failed suite [Test Vagrant Selenium Java] -->
