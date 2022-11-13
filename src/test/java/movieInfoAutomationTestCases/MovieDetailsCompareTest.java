@@ -114,7 +114,7 @@ public class MovieDetailsCompareTest extends BasePage {
 	public void tearDown()
 	{
 		System.out.println("Test Case Completed..");
-		closeBroswer();        //from base case use to close browser
+		closeBroswer();        //from base class use to close browser
 	}
 
 	//**********************************************End Test Case *******************************************************************
