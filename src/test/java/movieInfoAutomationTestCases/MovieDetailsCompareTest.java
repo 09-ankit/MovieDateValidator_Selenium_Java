@@ -52,7 +52,6 @@ public class MovieDetailsCompareTest extends BasePage {
 		Assert.assertEquals(verifyWikiPage, true);                       // Check if successfully navigated to correct Page
 		BasePage.getScreenshot("verifyPageSnapshot");                    //Capture ScreenShot
 		wiki.searchWikiMoviebyName(MovieName);                          //search movie
-		wiki.isMovieDetailsPageDisplayed();
 		wiki.fetchMovieInfo();					                       //Fetch Movie Info
 		wikiMovieOrigin=wiki.wikiCountryName;
 		wikiReleaseDate=wiki.wikiReleaseDate;	
