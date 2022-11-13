@@ -42,7 +42,8 @@ public class wikiMovieInfofetch extends BasePage {
 		if(searchBar.isDisplayed())
 		{
 			System.out.println("Sucessfully navigated to wikipedia page ");
-			return true;
+			return true;		
+			
 		}
 		else
 		{
@@ -51,25 +52,30 @@ public class wikiMovieInfofetch extends BasePage {
 		}
 	}
 
+	
+	
+	public void isMovieDetailsPageDisplayed()
+	{
+		if(movieLink.isDisplayed())
+		{
+			movieLink.click();
+			System.out.println("Movie Link Clicked..");
+		}
+		else
+		{
+			System.out.println("Fetching Deatils..");
+		}
+		
+	}
+	
+
+	
 	//Pass movie Name and press  enter   //Pushpa: The Rise
 	public void searchWikiMoviebyName(String movieName)
 	{
 		searchBar.sendKeys(movieName);
 		searchBar.sendKeys(Keys.ENTER);
-		if(!countryInfo.isDisplayed())
-		{
-			try {
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			movieLink.click();
-			try {
-				Thread.sleep(1500);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+		
 	}
 
 	//Get Movie Details from the Wikipedia page 

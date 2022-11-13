@@ -10,6 +10,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BasePage {
 
 	
@@ -18,9 +20,9 @@ public class BasePage {
 	//Pass base URL and set PageLoadTimeout and Implicit TimeOut
 	public static void initialization()
 	{		
-		//User need to Set Chrome driver Path
-		System.setProperty("webdriver.chrome.driver", "D:\\sel fils\\Ankit\\New folder\\chromedriver.exe");
-		driver = new ChromeDriver(); 								
+		//User need to Set Chrome driver Path		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(); 								 								
 		driver.manage().window().maximize();   //maximize window
 		driver.manage().deleteAllCookies();   //delete all cookies before lauch
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);  //Set timeout Ranges
@@ -35,5 +37,9 @@ public class BasePage {
 		 FileUtils.copyFile(source, new File("./Screenshots/"+screenshotName+".png"));
 	}
 
+	public static void closeBroswer()
+	{
+		driver.close();
+	}
 	
 }

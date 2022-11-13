@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Vagrant Selenium Java Assignment" duration-ms="30745" started-at="2022-11-12T10:34:39Z" finished-at="2022-11-12T10:35:10Z">
+  <suite name="Test Vagrant Selenium Java Assignment" duration-ms="36060" started-at="2022-11-13T05:56:34Z" finished-at="2022-11-13T05:57:10Z">
     <groups>
     </groups>
-    <test name="Test Validate Movie Info are Same in Both IMDB and Wikipedia" duration-ms="30745" started-at="2022-11-12T10:34:39Z" finished-at="2022-11-12T10:35:10Z">
+    <test name="Test Validate Movie Info are Same in Both IMDB and Wikipedia" duration-ms="36060" started-at="2022-11-13T05:56:34Z" finished-at="2022-11-13T05:57:10Z">
       <class name="movieInfoAutomationTestCases.MovieDetailsCompareTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="setup" is-config="true" duration-ms="3921" started-at="2022-11-12T16:04:39Z" finished-at="2022-11-12T16:04:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="setup" is-config="true" duration-ms="4717" started-at="2022-11-13T11:26:34Z" finished-at="2022-11-13T11:26:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="wikiGetMovieDetailsTest(java.lang.String, java.lang.String)[pri:1, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="wikiGetMovieDetailsTest" duration-ms="5458" started-at="2022-11-12T16:04:43Z" description="Get Movie details from Wikipedia Page" finished-at="2022-11-12T16:04:48Z">
+        <test-method status="PASS" signature="wikiGetMovieDetailsTest(java.lang.String, java.lang.String)[pri:1, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="wikiGetMovieDetailsTest" duration-ms="9060" started-at="2022-11-13T11:26:38Z" description="Get Movie details from Wikipedia Page" finished-at="2022-11-13T11:26:47Z">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wikiGetMovieDetailsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="147" started-at="2022-11-12T16:04:48Z" finished-at="2022-11-12T16:04:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="191" started-at="2022-11-13T11:26:47Z" finished-at="2022-11-13T11:26:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="setup" is-config="true" duration-ms="2477" started-at="2022-11-12T16:04:49Z" finished-at="2022-11-12T16:04:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="setup" is-config="true" duration-ms="2275" started-at="2022-11-13T11:26:48Z" finished-at="2022-11-13T11:26:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="imdbGetMovieDetailsTest(java.lang.String, java.lang.String)[pri:2, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="imdbGetMovieDetailsTest" duration-ms="15391" started-at="2022-11-12T16:04:51Z" description="Get Movie details from IMDB Page" finished-at="2022-11-12T16:05:06Z">
+        <test-method status="PASS" signature="imdbGetMovieDetailsTest(java.lang.String, java.lang.String)[pri:2, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="imdbGetMovieDetailsTest" duration-ms="16365" started-at="2022-11-13T11:26:50Z" description="Get Movie details from IMDB Page" finished-at="2022-11-13T11:27:06Z">
           <params>
             <param index="0">
               <value>
@@ -51,19 +51,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- imdbGetMovieDetailsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="179" started-at="2022-11-12T16:05:06Z" finished-at="2022-11-12T16:05:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="261" started-at="2022-11-13T11:27:06Z" finished-at="2022-11-13T11:27:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="setup" is-config="true" duration-ms="2895" started-at="2022-11-12T16:05:07Z" finished-at="2022-11-12T16:05:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="setup" is-config="true" duration-ms="2916" started-at="2022-11-13T11:27:06Z" finished-at="2022-11-13T11:27:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyMovieDetailsTest()[pri:3, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="verifyMovieDetailsTest" duration-ms="0" started-at="2022-11-12T16:05:09Z" description="Verify Movie Details found from Wikipedia and Imdb page are Same " finished-at="2022-11-12T16:05:09Z">
+        <test-method status="PASS" signature="verifyMovieDetailsTest()[pri:3, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="verifyMovieDetailsTest" duration-ms="0" started-at="2022-11-13T11:27:09Z" description="Verify Movie Details found from Wikipedia and Imdb page are Same " finished-at="2022-11-13T11:27:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMovieDetailsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@59fa1d9b]" name="tearDown" is-config="true" duration-ms="220" started-at="2022-11-12T16:05:09Z" finished-at="2022-11-12T16:05:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:movieInfoAutomationTestCases.MovieDetailsCompareTest@3c0ecd4b]" name="tearDown" is-config="true" duration-ms="203" started-at="2022-11-13T11:27:09Z" finished-at="2022-11-13T11:27:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

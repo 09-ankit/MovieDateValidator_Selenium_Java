@@ -17,7 +17,7 @@ import movieInfo.Pom.wikiMovieInfofetch;
  * Test Case Creation Date  : 12-Sept-2022
  * Author					: Ankit Bhattad
  * Description				: Verify and Validate Movie Origin and Release Date in Imdb and Wikepedia are same in Both Sites
- *********************************************************************************************************************************/
+ ********************************************************************************************************************************/
 
 
 
@@ -52,9 +52,10 @@ public class MovieDetailsCompareTest extends BasePage {
 		Assert.assertEquals(verifyWikiPage, true);                       // Check if successfully navigated to correct Page
 		BasePage.getScreenshot("verifyPageSnapshot");                    //Capture ScreenShot
 		wiki.searchWikiMoviebyName(MovieName);                          //search movie
+		wiki.isMovieDetailsPageDisplayed();
 		wiki.fetchMovieInfo();					                       //Fetch Movie Info
 		wikiMovieOrigin=wiki.wikiCountryName;
-		wikiReleaseDate=wiki.wikiReleaseDate;
+		wikiReleaseDate=wiki.wikiReleaseDate;	
 		BasePage.getScreenshot("FetchInfoSnapshot");                    //Capture ScreenShot
 	}
 
@@ -113,7 +114,7 @@ public class MovieDetailsCompareTest extends BasePage {
 	public void tearDown()
 	{
 		System.out.println("Test Case Completed..");
-		driver.close();
+		closeBroswer();        //from base case use to close browser
 	}
 
 	//**********************************************End Test Case *******************************************************************
