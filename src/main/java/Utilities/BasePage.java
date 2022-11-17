@@ -30,12 +30,20 @@ public class BasePage {
 	}
 	
 	//Screenshot Method
-	public static void getScreenshot(String screenshotName) throws IOException
+	public static void getScreenshot(String screenshotName)
 	{
 		TakesScreenshot ts= (TakesScreenshot)driver;
 		 File source =ts.getScreenshotAs(OutputType.FILE);
-		 FileUtils.copyFile(source, new File("./Screenshots/"+screenshotName+".png"));
+		 try {
+			FileUtils.copyFile(source, new File("./Screenshots/"+screenshotName+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
+	
+		
+	
 
 	public static void closeBroswer()
 	{
