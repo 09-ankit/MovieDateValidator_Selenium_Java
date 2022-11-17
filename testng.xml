@@ -13,7 +13,7 @@
 
 
 		<classes>
-			<class name="movieInfoAutomationTestCases.MovieDetailsCompareTest">
+			<class name="com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest">
 
 			</class>
 

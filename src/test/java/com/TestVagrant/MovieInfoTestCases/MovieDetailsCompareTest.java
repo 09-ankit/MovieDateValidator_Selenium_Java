@@ -1,4 +1,4 @@
-package movieInfoAutomationTestCases;
+package com.TestVagrant.MovieInfoTestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

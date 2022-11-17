@@ -6,7 +6,7 @@
     <parameter name="ImdbUrl" value="https://www.imdb.com/search/"/>
     <parameter name="wikipediaURl" value="https://en.wikipedia.org/wiki/Main_Page"/>
     <classes>
-      <class name="movieInfoAutomationTestCases.MovieDetailsCompareTest">
+      <class name="com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest">
         <methods>
           <include name="imdbGetMovieDetailsTest" invocation-numbers="0"/>
           <include name="tearDown"/>
@@ -14,7 +14,7 @@
           <include name="wikiGetMovieDetailsTest" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- movieInfoAutomationTestCases.MovieDetailsCompareTest -->
+      </class> <!-- com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest -->
     </classes>
   </test> <!-- Test Validate Movie Info are Same in Both IMDB and Wikipedia(failed) -->
 </suite> <!-- Failed suite [Test Vagrant Selenium Java] -->

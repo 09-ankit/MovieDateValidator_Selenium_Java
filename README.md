@@ -9,7 +9,7 @@
 path : /TestVagantSeleniumJava/testng.xml
 
 4)Test Case defined in
-path: /TestVagantSeleniumJava/src/test/java/movieInfoAutomationTestCases/MovieDetailsCompareTest.java
+path: /TestVagantSeleniumJava/src/test/java/com.TestVagrant.MovieInfoTestCases/MovieDetailsCompareTest.java
 
 5) Screensots are saved in 
 path : /TestVagantSeleniumJava/Screenshots
