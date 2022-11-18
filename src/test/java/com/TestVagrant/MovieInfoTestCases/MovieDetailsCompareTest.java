@@ -16,9 +16,9 @@ import com.TestVagrant.WikepideaPages.WikipideaHomePage;
 /*******************************************************************************************************************************
  * Test Case                : Verify Movie Details from IMDB and Wikepidea Page
  * Test Case Creation Date  : 12-Sept-2022
- * Author					: Ankit Bhattad
+ * Author		    : Ankit Bhattad
  * History of Modification  : 17-Sept-2022
- * Description				: Verify and Validate Movie Origin and Release Date in Imdb and Wikepedia are same in Both Sites
+ * Description		    : Verify and Validate Movie Origin and Release Date in Imdb and Wikepedia are same in Both Sites
  ********************************************************************************************************************************/
 
 
