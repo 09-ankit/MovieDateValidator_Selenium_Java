@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Vagrant Selenium Java Assignment" duration-ms="27313" started-at="2022-11-17T10:00:51Z" finished-at="2022-11-17T10:01:18Z">
+  <suite name="Test Vagrant Selenium Java Assignment" duration-ms="38191" started-at="2022-11-18T07:25:07Z" finished-at="2022-11-18T07:25:45Z">
     <groups>
     </groups>
-    <test name="Test Validate Movie Info are Same in Both IMDB and Wikipedia" duration-ms="27313" started-at="2022-11-17T10:00:51Z" finished-at="2022-11-17T10:01:18Z">
+    <test name="Test Validate Movie Info are Same in Both IMDB and Wikipedia" duration-ms="38191" started-at="2022-11-18T07:25:07Z" finished-at="2022-11-18T07:25:45Z">
       <class name="com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest@e45f292]" name="setup" is-config="true" duration-ms="4500" started-at="2022-11-17T15:30:51Z" finished-at="2022-11-17T15:30:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest@e45f292]" name="setup" is-config="true" duration-ms="8669" started-at="2022-11-18T12:55:07Z" finished-at="2022-11-18T12:55:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="wikiGetMovieDetailsTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest@e45f292]" name="wikiGetMovieDetailsTest" duration-ms="22538" started-at="2022-11-17T15:30:55Z" description="Get Movie details from Wikipedia Page" finished-at="2022-11-17T15:31:18Z">
+        <test-method status="PASS" signature="wikiGetMovieDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest@e45f292]" name="wikiGetMovieDetailsTest" duration-ms="29261" started-at="2022-11-18T12:55:15Z" description="Get Movie details from Wikipedia Page" finished-at="2022-11-18T12:55:45Z">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,26 @@
                 <![CDATA[https://www.imdb.com/search/]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[December]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[17]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2021]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wikiGetMovieDetailsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest@e45f292]" name="tearDown" is-config="true" duration-ms="239" started-at="2022-11-17T15:31:18Z" finished-at="2022-11-17T15:31:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest@e45f292]" name="tearDown" is-config="true" duration-ms="226" started-at="2022-11-18T12:55:45Z" finished-at="2022-11-18T12:55:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

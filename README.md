@@ -1,6 +1,6 @@
 # TestVagantAssesment
  *************************************Points to Note**************************************
-1) Change Chrome Driver path in  Utilities---> Base Page (According to your Local Machine)
+1) Change Chrome Driver path in  com.TestVagrant.Utilities---> Base Page (According to your Local Machine)
  for example System.setProperty("webdriver.chrome.driver", "Your chrome driver path");
   
 2) Curent Project Run on Chrome Webdriver greater than or equal 107 version

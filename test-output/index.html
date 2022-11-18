@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Test_Vagrant_Selenium_Java_Assignment">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Vagrant_Selenium_Java_Assignment" title="com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest" hash-for-method="wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/)">wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Vagrant_Selenium_Java_Assignment" title="com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest" hash-for-method="wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/, December, 17, 2...)">wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/, December, 17, 2...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Vagrant_Selenium_Java_Assignment -->
@@ -125,10 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/)">
-                  </a> <!-- wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/) -->
+                  <a name="wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/, December, 17, 2...)">
+                  </a> <!-- wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/, December, 17, 2...) -->
                   <span class="method-name">wikiGetMovieDetailsTest</span>
-                  <span class="parameters">(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/)</span>
+                  <span class="parameters">(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/, December, 17, 2021)</span>
                   <em>
 (Get Movie details from Wikipedia Page)                  </em>
                 </div> <!-- method-content -->
@@ -146,8 +146,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test Vagrant Selenium Java Assignment&quot;&gt;
   &lt;test name=&quot;Test Validate Movie Info are Same in Both IMDB and Wikipedia&quot;&gt;
+    &lt;parameter name=&quot;Month&quot; value=&quot;December&quot;/&gt;
     &lt;parameter name=&quot;MovieName&quot; value=&quot;Pushpa: The &quot;/&gt;
+    &lt;parameter name=&quot;Year&quot; value=&quot;2021&quot;/&gt;
     &lt;parameter name=&quot;ImdbUrl&quot; value=&quot;https://www.imdb.com/search/&quot;/&gt;
+    &lt;parameter name=&quot;Day&quot; value=&quot;17&quot;/&gt;
     &lt;parameter name=&quot;wikipediaURl&quot; value=&quot;https://en.wikipedia.org/wiki/Main_Page&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest&quot;/&gt;
@@ -194,12 +197,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'wikiGetMovieDetailsTest')
 data.setCell(0, 2, 'com.TestVagrant.MovieInfoTestCases.MovieDetailsCompareTest')
-data.setCell(0, 3, 22538);
+data.setCell(0, 3, 29261);
 window.suiteTableData['Test_Vagrant_Selenium_Java_Assignment']= { tableData: data, tableDiv: 'times-div-Test_Vagrant_Selenium_Java_Assignment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Test_Vagrant_Selenium_Java_Assignment">
               </div> <!-- times-div-Test_Vagrant_Selenium_Java_Assignment -->
             </div> <!-- times-div -->
@@ -231,12 +234,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/)</span>
-                <span class="method-start">4500 ms</span>
+                <span class="method-name">wikiGetMovieDetailsTest(https://en.wikipedia.org/wiki/Main_Page, Pushpa: The , https://www.imdb.com/search/, December, 17, 2...)</span>
+                <span class="method-start">8669 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27041 ms</span>
+                <span class="method-start">37933 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

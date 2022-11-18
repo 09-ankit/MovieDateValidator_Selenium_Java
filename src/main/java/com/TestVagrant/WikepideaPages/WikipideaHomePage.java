@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Utilities.BasePage;
+import com.TestVagrant.CommonActions.CommonActions;
+import com.TestVagrant.Utilities.BasePage;
 
-public class WikipideaHomePage extends BasePage {
+public class WikipideaHomePage extends CommonActions {
 
 	@FindBy(xpath="//input[@placeholder='Search Wikipedia']")
 	WebElement searchBar;
@@ -24,32 +25,20 @@ public class WikipideaHomePage extends BasePage {
 	//get Url
 	public void getWikipediaUrl(String wikiURL)
 	{
-		driver.get(wikiURL);
+		getUrl(wikiURL);
 	}
 
 	//verify Page
-	public boolean IsWikipediaPageDispayed()
-	{
-		if(searchBar.isDisplayed())
-		{
-			System.out.println("Sucessfully navigated to wikipedia page ");
-			return true;		
-
-		}
-		else
-		{
-			System.out.println("Navigate page is not as expected !! Please check the url");
-			return false;
-		}
+	public boolean IsWikipediaPageDisplayed()
+	{		
+		return verifyPage(searchBar, " Wikipedia Home Page");
+		
 	}
 
-
-
-	//Pass movie Name and press  enter   //Pushpa: The Rise
+	//Pass movie Name 
 	public void searchMovieByName(String movieName)
 	{
-		searchBar.sendKeys(movieName);
-		searchBar.sendKeys(Keys.ENTER);
+		searchMovie(searchBar, movieName);
 		movieSelectLink.click();
 
 	}

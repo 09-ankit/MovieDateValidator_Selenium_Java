@@ -4,10 +4,11 @@ package com.TestVagrant.WikepideaPages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import Utilities.BasePage;
+import com.TestVagrant.CommonActions.CommonActions;
 
 
-public class WikipediaGetMovieDetails extends BasePage {
+
+public class WikipediaGetMovieDetails extends CommonActions {
 
 	public String getCountryName;
 	public String getReleaseDate;
@@ -26,25 +27,16 @@ public class WikipediaGetMovieDetails extends BasePage {
 	
 	public boolean IsMovieDetailsDisplayed()
 	{
-		if(countryName.isDisplayed() &&  releaseDate.isDisplayed())
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}		
+		//verify is this WebElemets present on the page
+		return	verifyIsMovieDetailsDisplayed(countryName, releaseDate);			
 	}
 
 
 	//Get Movie Details from the Wikipedia page 
 	public void fetchMovieDetails()
-	{		
-				
-			getCountryName=countryName.getText();
-			getReleaseDate=releaseDate.getText();
-			System.out.println("Found Country Name in Wikipedia page is :- "+ getCountryName);
-			System.out.println("Found Release Date in Wikipedia page is :- "+ getReleaseDate);
+	{			
+			getCountryName= getMovieInfo(countryName, "Wikipedia page" ,"Country");
+			getReleaseDate= getMovieInfo(releaseDate, "Wikipedia page", "Release Date");
 	
 	}
 

@@ -8,10 +8,9 @@ import org.testng.annotations.Test;
 
 import com.TestVagrant.ImdbPages.ImdbGetMovieDetails;
 import com.TestVagrant.ImdbPages.ImdbHomePage;
+import com.TestVagrant.Utilities.BasePage;
 import com.TestVagrant.WikepideaPages.WikipediaGetMovieDetails;
 import com.TestVagrant.WikepideaPages.WikipideaHomePage;
-
-import Utilities.BasePage;
 
 
 /*******************************************************************************************************************************
@@ -27,6 +26,7 @@ import Utilities.BasePage;
 
 public class MovieDetailsCompareTest extends BasePage {
 
+	//Class objects
 	WikipideaHomePage wikiHomePage;
 	WikipediaGetMovieDetails wikiMovieDetails;
 	ImdbHomePage imdbHomePage;
@@ -50,21 +50,21 @@ public class MovieDetailsCompareTest extends BasePage {
 	}
 
 
-	@Parameters({"wikipediaURl","MovieName","ImdbUrl"})
+	@Parameters({"wikipediaURl","MovieName","ImdbUrl","Month","Day","Year"})
 	@Test(priority=1 , description="Get Movie details from Wikipedia Page")	
-	public void wikiGetMovieDetailsTest(String wikipediaURl, String MovieName, String ImdbUrl)  
+	public void wikiGetMovieDetailsTest(String wikipediaURl, String MovieName, String ImdbUrl,String month , String day , String year)  
 	{
 		//Get Details from Wikipedia Site
 		wikiHomePage.getWikipediaUrl(wikipediaURl);                                                                  
-		boolean verifyIsWikipediaPageDisplayed=wikiHomePage.IsWikipediaPageDispayed();		
+		boolean verifyIsWikipediaPageDisplayed=wikiHomePage.IsWikipediaPageDisplayed();		
 		Assert.assertEquals(verifyIsWikipediaPageDisplayed, true);                                                 	
-		BasePage.getScreenshot("verifyPage");                                                              
+		BasePage.getScreenshot("verifyPage");                                                         
 
 		//Searching Movie
 		wikiHomePage.searchMovieByName(MovieName);                                                                		
 		boolean verifyIsMovieDisplayed=wikiMovieDetails.IsMovieDetailsDisplayed();
 		Assert.assertTrue(verifyIsMovieDisplayed, "Movie Details are not Displayed from Wikipedia Page..");
-
+		
 		//Get Movie Details
 		wikiMovieDetails.fetchMovieDetails();	                                                                 
 
@@ -74,7 +74,7 @@ public class MovieDetailsCompareTest extends BasePage {
 
 		//Get Details from Wikipedia Site
 		imdbHomePage.getImdbUrl(ImdbUrl);					 		                    
-		boolean verifyIsImdbPageDisplayed=imdbHomePage.verifyIsImdbPageDisplayed();
+		boolean verifyIsImdbPageDisplayed=imdbHomePage.IsImdbPageDisplayed();
 		Assert.assertEquals(verifyIsImdbPageDisplayed, true);         			       
 		BasePage.getScreenshot("verifyImdbPage"); 			                  
 
@@ -95,7 +95,7 @@ public class MovieDetailsCompareTest extends BasePage {
 		boolean verifyMovieOrigin =wikiMovieOrigin.equalsIgnoreCase(imdbMovieOrigin);
 		Assert.assertEquals(verifyMovieOrigin, true ,"Movie Country Name Found from IMDB and Wikipedia Page is not as Expected");			
 		//Verify Date
-		Assert.assertEquals(verifyDate(), true,"Movie Release Date Found from IMDB and Wikipedia Page is not as Expected");
+		Assert.assertEquals(verifyDate(month,day,year), true,"Movie Release Date Found from IMDB and Wikipedia Page is not as Expected");
 		System.out.println("Details Verified ...");
 	}
 
@@ -111,13 +111,13 @@ public class MovieDetailsCompareTest extends BasePage {
 	
 
 	//Verify Date from Both the Sites
-	public boolean verifyDate()
+	public boolean verifyDate(String month , String Day , String year)
 	{
 		boolean flag=false;
 		//Verify Movie Release Date
-		if(wikiReleaseDate.contains("December") && wikiReleaseDate.contains("17") && wikiReleaseDate.contains("2021"))
+		if(wikiReleaseDate.contains(month) && wikiReleaseDate.contains(Day) && wikiReleaseDate.contains(year))
 		{			
-			if(imdbReleaseDate.contains("December") && imdbReleaseDate.contains("17") && imdbReleaseDate.contains("2021"))
+			if(imdbReleaseDate.contains(month) && imdbReleaseDate.contains(Day) && imdbReleaseDate.contains(year))
 			{
 				System.out.println("Movie Date  Found from IMDB and Wikipedia Page is as Expected");
 				flag=true;

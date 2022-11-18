@@ -1,13 +1,12 @@
 package com.TestVagrant.ImdbPages;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.TestVagrant.CommonActions.CommonActions;
 
-import Utilities.BasePage;
 
-public class ImdbHomePage extends BasePage{
+public class ImdbHomePage extends CommonActions{
 
 
 
@@ -26,31 +25,22 @@ public class ImdbHomePage extends BasePage{
 	//navigate to URL
 	public void getImdbUrl(String ImdbUrl)
 	{
-		driver.get(ImdbUrl);
+		getUrl(ImdbUrl);
 	}
 	
 
 	//verify page is correct
-	public boolean verifyIsImdbPageDisplayed()
+	public boolean IsImdbPageDisplayed()
 	{
-		if(searchBar.isDisplayed())
-		{
-			System.out.println("Sucessfully navigated to IMDB page ");
-			return true;
-		}
-		else
-		{
-			System.out.println("Navigate page is not as expected !! Please check the url");
-			return false;
-		}
+		return verifyPage(searchBar, "IMDB Home Page");
+		
 	}
 
 
 	//serach for movie
 	public void searchMovieByName(String movieName)
 	{
-		searchBar.sendKeys(movieName);
-		searchBar.sendKeys(Keys.ENTER);
+		searchMovie(searchBar, movieName);
 		movieSelectlink.click();
 	}
 
