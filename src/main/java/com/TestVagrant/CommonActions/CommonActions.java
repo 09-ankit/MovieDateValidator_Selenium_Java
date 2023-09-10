@@ -14,7 +14,7 @@ public class CommonActions extends BasePage {
 	}
 
 
-	//Use to verify WebPage is correct found
+	//Use to verify WebPage is correctly found
 	public boolean verifyPage(WebElement ElementName , String PageName)
 	{		
 		if(ElementName.isDisplayed())
