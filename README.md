@@ -14,11 +14,9 @@ Outcome: If the dates from both sources match, the test case is successful.
 *************************************Points to Note**************************************
 
 1) Run the Project Through testng.xml file As Paramters are defined in it
-path : /TestVagantSeleniumJava/testng.xml
-
+  path : /TestVagantSeleniumJava/testng.xml
 2)Test Case defined in
-path: TestVagrantSeleniumJava\src\test\java
-
+  path: TestVagrantSeleniumJava\src\test\java
 3)
--Added screenshots folder in .gitIgnore file
--Added Resuable functions are in  Common Action Class Package
+  -Added screenshots folder in .gitIgnore file
+  -Added Resuable functions are in  Common Action Class Package
