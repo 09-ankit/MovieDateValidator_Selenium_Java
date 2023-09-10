@@ -9,13 +9,16 @@ import com.TestVagrant.CommonActions.CommonActions;
 public class ImdbHomePage extends CommonActions{
 
 
-
+	//***********WebElements of ImdbHomePage ***********
+	
 	@FindBy(name="q")
 	WebElement searchBar;
 
 	@FindBy(xpath="//a[text()='Pushpa: The Rise - Part 1']")
 	WebElement movieSelectlink;
 
+
+	
 	public ImdbHomePage()
 	{
 		PageFactory.initElements(driver, this);
