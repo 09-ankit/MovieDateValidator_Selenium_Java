@@ -11,7 +11,7 @@ Outcome: If the dates from both sources match, the test case is successful.
 
 
 
- *************************************Points to Note**************************************
+*************************************Points to Note**************************************
 
 1) Run the Project Through testng.xml file As Paramters are defined in it
 path : /TestVagantSeleniumJava/testng.xml
