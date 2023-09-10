@@ -7,6 +7,8 @@ The Movie Date Checker project aims to verify if the release dates of movies on 
 **Project Details:**
 Objective: To validate the accuracy of movie release dates across different sources.
 Functionality: The system takes a movie name as input, fetches release date information from IMDb and Wikipedia, and compares the dates.
+Framework Used- POM, TestNG
+Programming Language - Java
 Outcome: If the dates from both sources match, the test case is successful.
 
 
@@ -15,8 +17,9 @@ Outcome: If the dates from both sources match, the test case is successful.
 
 1) Run the Project Through testng.xml file As Paramters are defined in it
   path : /TestVagantSeleniumJava/testng.xml
-2)Test Case defined in
-  path: TestVagrantSeleniumJava\src\test\java
+
+2) Test Case defined in
+    path: TestVagrantSeleniumJava\src\test\java
 3)
-  -Added screenshots folder in .gitIgnore file
-  -Added Resuable functions are in  Common Action Class Package
+   -Added screenshots folder in .gitIgnore file
+   -Added Resuable functions are in  Common Action Class Package
